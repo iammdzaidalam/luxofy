@@ -1,0 +1,88 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Step 1 — Basic information
+  fullName      String
+  email         String
+  phone         String  @unique
+  emailVerified Boolean @default(false)
+  city          String
+  state         String
+  country       String  @default("India")
+  age           Int?
+  gender        String?
+  occupation    String
+  company       String?
+  designation   String?
+  linkedin      String?
+
+  // Step 2 — Investment profile
+  annualIncome       String?
+  netWorth           String?
+  budget             String
+  timeline           String
+  currentInvestments String  @default("")
+
+  // Step 3 — Buying intent
+  purpose      String
+  propertyType String
+  goaLocation  String
+
+  // Step 4 — Qualification
+  hearAbout         String
+  expectedValue     String?
+  paymentPreference String?
+  wouldLike         String  @default("")
+
+  // Scoring
+  score Int    @default(0)
+  band  String @default("COLD")
+
+  // Attribution
+  utmSource   String?
+  utmMedium   String?
+  utmCampaign String?
+  referrer    String?
+
+  // Pipeline
+  status     String  @default("NEW")
+  assignedTo String?
+
+  auditLogs AuditLog[]
+}
+
+model OtpCode {
+  id        String   @id @default(cuid())
+  email     String
+  codeHash  String
+  expiresAt DateTime
+  attempts  Int      @default(0)
+  verified  Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  event     String
+  detail    String   @default("")
+  ip        String?
+  leadId    String?
+  lead      Lead?    @relation(fields: [leadId], references: [id], onDelete: SetNull)
+
+  @@index([leadId])
+  @@index([event])
+}

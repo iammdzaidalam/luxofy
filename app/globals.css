@@ -1,26 +1,157 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Palette: warm ivory canvas, deep ink, aged bronze accent */
+  --color-ivory: #f7f5f0;
+  --color-parchment: #efece4;
+  --color-ink: #1a1917;
+  --color-ink-soft: #2c2a26;
+  --color-stone: #6f6a60;
+  --color-line: #e2ddd1;
+  --color-line-dark: #3a3831;
+  --color-bronze: #9c7c46;
+  --color-bronze-deep: #7d6134;
+  --color-cream: #fdfcf9;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-display: var(--font-cormorant);
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-dm-sans);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --tracking-luxe: 0.22em;
+
+  --animate-marquee: marquee 42s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-bronze);
+  color: var(--color-cream);
+}
+
+/* Display serif stays light and elegant; never bold */
+.font-display {
+  letter-spacing: 0.005em;
+}
+
+/*
+ * Pill buttons with a circular fill that rises from the bottom on hover
+ * (The Damai / Dennis Snellenberg style). Color pairs are set per variant
+ * in components/ui.tsx; this handles the motion.
+ */
+.pill {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+.pill-fill {
+  position: absolute;
+  left: -25%;
+  top: 110%;
+  z-index: -1;
+  width: 150%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  transition: top 0.55s cubic-bezier(0.32, 0.72, 0.22, 1);
+}
+.pill:hover .pill-fill,
+.pill:focus-visible .pill-fill {
+  top: -55%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pill-fill {
+    transition: none;
+  }
+}
+
+/* Hide scrollbars on carousel tracks while keeping them scrollable */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars globally */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Number inputs without spinners (calculator) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Range slider styling for the investment calculator */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: var(--color-line);
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-bronze);
+  border: 3px solid var(--color-cream);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.25);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-bronze);
+  border: 3px solid var(--color-cream);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.25);
+  cursor: pointer;
 }

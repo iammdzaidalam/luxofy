@@ -1,65 +1,122 @@
-import Image from "next/image";
+import { LenisProvider } from "@/components/lenis-provider";
+import { Navbar } from "@/components/sections/navbar";
+import { Hero } from "@/components/sections/hero";
+import { WhyAttend } from "@/components/sections/why-attend";
+import { WhyGoa } from "@/components/sections/why-goa";
+import { FeaturedProjects } from "@/components/sections/projects";
+import { InvestmentCalculator } from "@/components/sections/calculator";
+import { Agenda } from "@/components/sections/agenda";
+import { Speakers } from "@/components/sections/speakers";
+import { Testimonials } from "@/components/sections/testimonials";
+import { Gallery } from "@/components/sections/gallery";
+import { Faq } from "@/components/sections/faq";
+import { CtaBanner } from "@/components/sections/cta-banner";
+import { Footer } from "@/components/sections/footer";
+import { StickyCta } from "@/components/sections/sticky-cta";
+import { faqs } from "@/lib/content";
+import { site } from "@/lib/site";
 
-export default function Home() {
+function StructuredData() {
+  const event = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: site.name,
+    startDate: site.event.startIso,
+    endDate: site.event.endIso,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: {
+      "@type": "Place",
+      name: site.event.city,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: site.event.city,
+        addressCountry: "IN",
+      },
+    },
+    organizer: {
+      "@type": "Organization",
+      name: site.organizer,
+      url: site.url,
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "INR",
+      availability: "https://schema.org/LimitedAvailability",
+      url: `${site.url}/register`,
+    },
+    description:
+      "An invite-only investor showcase covering premium villa and apartment investments in Goa, hosted by Think Reality and Luxofy Properties.",
+  };
+
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: site.partner,
+    url: site.url,
+    sameAs: Object.values(site.social),
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: site.contact.phone,
+      contactType: "sales",
+      areaServed: "IN",
+    },
+  };
+
+  const localBusiness = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    name: site.partner,
+    areaServed: "Goa, India",
+    telephone: site.contact.phone,
+    email: site.contact.email,
+    url: site.contact.website,
+  };
+
+  const faqPage = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      {[event, organization, localBusiness, faqPage].map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+      ))}
+    </>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <LenisProvider>
+      <StructuredData />
+      <Navbar />
+      <main>
+        <Hero />
+        <WhyAttend />
+        <WhyGoa />
+        <FeaturedProjects />
+        <InvestmentCalculator />
+        <Agenda />
+        <Speakers />
+        <Testimonials />
+        <Gallery />
+        <Faq />
+        <CtaBanner />
       </main>
-    </div>
+      <Footer />
+      <StickyCta />
+    </LenisProvider>
   );
 }
