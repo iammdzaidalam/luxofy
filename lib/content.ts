@@ -26,7 +26,7 @@ export const trustStats = [
 export const trustLogos = ["Think Reality", "Luxofy Properties", "STAIL Realty OS"];
 
 export const trustIntro =
-  "Hosted by Think Reality, RERA certified channel partners, with Luxofy Properties, the developer behind fourteen luxury projects across North Goa, including the sold out Eleva Suites in Calangute.";
+  "Hosted by Think Reality, RERA certified channel partners, with Luxofy Properties, the developer behind fourteen luxury projects across Goa, including the sold out Eleva Suites in Calangute.";
 
 /** Editorial collage around the intro heading, all from the Luxofy portfolio. */
 export const introCollage = [
@@ -67,7 +67,7 @@ export const whyGoa = {
   intro:
     "Goa is no longer just a holiday destination. It is one of India's fastest appreciating luxury property markets, backed by real infrastructure and real rental demand.",
   stats: [
-    { value: 14, suffix: "%", label: "Average annual price appreciation in North Goa since 2020" },
+    { value: 14, suffix: "%", label: "Average annual price appreciation in Goa since 2020" },
     { value: 8, suffix: "M+", label: "Tourist arrivals every year, and climbing" },
     { value: 9, suffix: "%", label: "Peak rental yields on managed luxury villas" },
     { value: 2, suffix: "", label: "International airports after the opening of Mopa" },
@@ -101,7 +101,7 @@ export const whyGoa = {
   comparison: {
     caption: "Five year outlook on a 2 crore luxury purchase, indicative",
     rows: [
-      { market: "North Goa villa", appreciation: "12 to 15% p.a.", yield: "6 to 9%", exit: "High" },
+      { market: "Goa villa", appreciation: "12 to 15% p.a.", yield: "6 to 9%", exit: "High" },
       { market: "Gurugram apartment", appreciation: "8 to 10% p.a.", yield: "2 to 3%", exit: "High" },
       { market: "Mumbai apartment", appreciation: "6 to 8% p.a.", yield: "2 to 3%", exit: "Moderate" },
       { market: "Dubai apartment", appreciation: "8 to 12% p.a.", yield: "5 to 7%", exit: "Moderate" },
@@ -119,8 +119,6 @@ export type ProjectCategory = "Villas" | "Apartments" | "Upcoming";
 
 export interface CatalogItem {
   name: string;
-  /** Slug of the dedicated landing page under /projects, when one exists. */
-  slug?: string;
   location: string;
   categories: ProjectCategory[];
   blurb: string;
@@ -134,8 +132,7 @@ export const catalog: CatalogItem[] = [
   // Villas
   {
     name: "The Pine Cliff",
-    slug: "pine-cliff",
-    location: "Parra, North Goa",
+    location: "Parra, Goa",
     categories: ["Villas"],
     blurb:
       "Three gated 4 BHK villas with private pools, wooden pool decks and panoramic views, on Parra's most central lane.",
@@ -146,8 +143,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Floretta",
-    slug: "the-floretta",
-    location: "Parra, North Goa",
+    location: "Parra, Goa",
     categories: ["Villas"],
     blurb:
       "4 BHK fully furnished villas with private pools and a rent back facility, in the lanes of Parra.",
@@ -157,8 +153,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Casa De Fresco",
-    slug: "casa-de-fresco",
-    location: "Guirim, North Goa",
+    location: "Guirim, Goa",
     categories: ["Villas"],
     blurb:
       "3 bedroom villas with stunning field views, jacuzzi decks and private amenities in quiet Guirim.",
@@ -167,8 +162,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "The Azalea",
-    slug: "the-azalea",
-    location: "Candolim, North Goa",
+    location: "Candolim, Goa",
     categories: ["Villas"],
     blurb:
       "Four field facing 5 BHK mansions with private pools and steamers in the bathrooms, a 2.3 km walk from Candolim beach.",
@@ -179,7 +173,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Casa Adelaide",
-    location: "Aldona, North Goa",
+    location: "Aldona, Goa",
     categories: ["Villas"],
     blurb: "An exclusive enclave of 4 BHK villas with spacious terraces in riverside Aldona.",
     price: "₹3.94 Cr onwards",
@@ -188,7 +182,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Casa Hill Crest",
-    location: "Bastora, North Goa",
+    location: "Bastora, Goa",
     categories: ["Villas", "Upcoming"],
     blurb: "3 and 4 BHK villas with panoramic views, private pools and smart homes.",
     config: "3 and 4 BHK villas",
@@ -197,8 +191,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "The Zinnia",
-    slug: "the-zinnia",
-    location: "Sangolda, North Goa",
+    location: "Sangolda, Goa",
     categories: ["Villas", "Upcoming"],
     blurb: "4 BHK villas with panoramic views, private pools and smart homes in leafy Sangolda.",
     price: "₹4.75 Cr onwards",
@@ -210,7 +203,7 @@ export const catalog: CatalogItem[] = [
   // Apartments
   {
     name: "Eleva Suites",
-    location: "Calangute, North Goa",
+    location: "Calangute, Goa",
     categories: ["Apartments"],
     blurb: "2 BHK apartments near Calangute beach with private plunge pools. Fully sold out.",
     config: "2 BHK with plunge pools",
@@ -219,8 +212,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Casa Magarida",
-    slug: "casa-margarida",
-    location: "Baga Arpora, North Goa",
+    location: "Baga Arpora, Goa",
     categories: ["Apartments"],
     blurb: "2 BHK apartments with a swimming pool and a clubhouse with gym and yoga room.",
     price: "₹1.52 Cr onwards",
@@ -229,15 +221,14 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Panoramic Vista",
-    location: "Bicholim, North Goa",
+    location: "Bicholim, Goa",
     categories: ["Apartments"],
     blurb: "Apartments in fast growing Bicholim. Full details presented at the showcase.",
     image: { src: "/projects/panoramic-vista-c0.jpg", alt: "Panoramic Vista, Bicholim" },
   },
   {
     name: "Mmirari House",
-    slug: "mmirari-house",
-    location: "Reis Magos, North Goa",
+    location: "Reis Magos, Goa",
     categories: ["Apartments"],
     blurb:
       "Boutique 2 BHK residences; ground floor homes carry private plunge pools and every resident shares the terrace pool.",
@@ -248,8 +239,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Serene Meadows",
-    slug: "serene-meadows",
-    location: "Kadamba Plateau, North Goa",
+    location: "Kadamba Plateau, Goa",
     categories: ["Apartments"],
     blurb:
       "An elegant enclave of 63 spacious 2 BHK and 8 refined 3 BHK apartments with top amenities and seamless connectivity.",
@@ -258,8 +248,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Amora Horizon",
-    slug: "amora-horizon",
-    location: "Nerul, North Goa",
+    location: "Nerul, Goa",
     categories: ["Apartments"],
     blurb:
       "2 and 3 BHK residences with private pools, a tropical forest theme, pickle ball court, terrace pool and restaurant.",
@@ -270,7 +259,7 @@ export const catalog: CatalogItem[] = [
   // Upcoming only
   {
     name: "Spring Field",
-    location: "North Goa",
+    location: "Goa",
     categories: ["Upcoming"],
     blurb: "Construction has started. Location and commercials are revealed first at the showcase.",
     status: "Launching soon",

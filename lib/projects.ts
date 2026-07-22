@@ -64,7 +64,7 @@ export const projects: Project[] = [
     slug: "pine-cliff",
     name: "The Pine Cliff",
     tagline: "Splendour villas on Parra's most central lane",
-    location: "Parra, North Goa",
+    location: "Parra, Goa",
     category: "Villas",
     developer: "Aanandam · RS Developers",
     hero: { src: "/projects/pine-cliff-0.jpg", alt: "Private pool and wooden deck at The Pine Cliff, Parra" },
@@ -78,7 +78,7 @@ export const projects: Project[] = [
       eyebrow: "The project",
       title: "A masterpiece set in the hills of Parra",
       paragraphs: [
-        "Nestled in the serene hills of North Goa, The Pine Cliff offers an unparalleled living experience. Three ultra-luxury 4 BHK villas blend modern and classical design on the outside with classy, contemporary interiors within — each with its own independent gated entry inside a fully gated complex.",
+        "Nestled in the serene hills of Goa, The Pine Cliff offers an unparalleled living experience. Three ultra-luxury 4 BHK villas blend modern and classical design on the outside with classy, contemporary interiors within — each with its own independent gated entry inside a fully gated complex.",
         "Set on a gradual hillside, every villa opens onto a relaxing private pool with wooden decking, and wide, panoramic balconies frame magnificent views of sunrise, sunset and the valley below. Spacious, airy and fully furnished with curated interiors, each home at Pine Cliff is uniquely yours.",
       ],
     },
@@ -113,7 +113,7 @@ export const projects: Project[] = [
       { src: "/projects/pine-cliff-3.jpg", alt: "Primary bedroom at The Pine Cliff" },
     ],
     locationCopy:
-      "Parra sits at the quiet centre of North Goa's most wanted triangle — minutes from the Calangute–Baga strip in one direction and Anjuna in the other, yet famous for watermelon fields, old churches and the coconut-tree-lined lanes the village is known for.",
+      "Parra sits at the quiet centre of Goa's most wanted triangle — minutes from the Calangute–Baga strip in one direction and Anjuna in the other, yet famous for watermelon fields, old churches and the coconut-tree-lined lanes the village is known for.",
     distances: [
       { label: "Anjuna and Baga beaches", value: "10 min drive" },
       { label: "Calangute", value: "3 miles" },
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     slug: "the-floretta",
     name: "The Floretta",
     tagline: "Eight private-pool villas by Ellora in Parra",
-    location: "Parra, North Goa",
+    location: "Parra, Goa",
     category: "Villas",
     developer: "Ellora Infratech",
     hero: { src: "/projects/floretta-1.jpg", alt: "Completed villa pool at The Floretta, Parra, photographed on site" },
@@ -187,7 +187,7 @@ export const projects: Project[] = [
       { src: "/projects/floretta-6.jpg", alt: "Garden and pool deck at The Floretta" },
     ],
     locationCopy:
-      "Parra is the quiet, leafy heart of North Goa — the coconut-tree road made famous by a hundred film shoots is minutes away, and the Anjuna and Baga beach belt, Mapusa and Porvorim are all within a short drive.",
+      "Parra is the quiet, leafy heart of Goa — the coconut-tree road made famous by a hundred film shoots is minutes away, and the Anjuna and Baga beach belt, Mapusa and Porvorim are all within a short drive.",
     distances: [
       { label: "Parra coconut tree road", value: "1–2 min" },
       { label: "Anjuna and Baga beaches", value: "10–15 min drive" },
@@ -205,7 +205,7 @@ export const projects: Project[] = [
     slug: "the-azalea",
     name: "The Azalea",
     tagline: "Field-facing 5 BHK mansions in Candolim",
-    location: "Candolim, North Goa",
+    location: "Candolim, Goa",
     category: "Villas",
     developer: "Ellora Group",
     hero: { src: "/projects/azalea-0.jpg", alt: "Pool view at night at The Azalea, Candolim" },
@@ -257,7 +257,7 @@ export const projects: Project[] = [
       { src: "/projects/azalea-7.jpg", alt: "Bedroom at The Azalea" },
     ],
     locationCopy:
-      "Candolim pairs one of North Goa's finest beaches with the heritage of Fort Aguada, five-star neighbours and a coastal-zone address that stays calm even in season. The Azalea sits in Anna Vaddo, a short stroll from the sand.",
+      "Candolim pairs one of Goa's finest beaches with the heritage of Fort Aguada, five-star neighbours and a coastal-zone address that stays calm even in season. The Azalea sits in Anna Vaddo, a short stroll from the sand.",
     distances: [
       { label: "Candolim beach", value: "1–2 min drive" },
       { label: "Fort Aguada", value: "10 min drive" },
@@ -274,7 +274,7 @@ export const projects: Project[] = [
     slug: "casa-de-fresco",
     name: "Casa De Fresco",
     tagline: "A story called life, told in Guirim",
-    location: "Guirim, North Goa",
+    location: "Guirim, Goa",
     category: "Villas",
     developer: "Gonex Buildwell",
     hero: { src: "/projects/casa-de-fresco-2.jpg", alt: "The row of Casa De Fresco villas, Guirim" },
@@ -288,7 +288,7 @@ export const projects: Project[] = [
       eyebrow: "The project",
       title: "Affordable luxury in a prime Guirim address",
       paragraphs: [
-        "Casa De Fresco is an aesthetic space built with quality — eight luxurious 3 BHK villas designed to fine perfection in quiet Guirim, North Goa. Each villa is a testimony to smart design, thoughtful architecture and aesthetic spaces, with a royal reflection of radiant charm in every bedroom.",
+        "Casa De Fresco is an aesthetic space built with quality — eight luxurious 3 BHK villas designed to fine perfection in quiet Guirim, Goa. Each villa is a testimony to smart design, thoughtful architecture and aesthetic spaces, with a royal reflection of radiant charm in every bedroom.",
         "Enjoy a garden at your terrace and relax in the open-air jacuzzi while the cool breeze rolls in from the fields. Wake up to peacocks in the surrounding greens, walk or cycle the nature trail past Guirim's churches and heritage lanes — close to the city, but far from the crowd.",
       ],
     },
@@ -341,7 +341,7 @@ export const projects: Project[] = [
     slug: "the-zinnia",
     name: "The Zinnia",
     tagline: "Smart 4 BHK villas in leafy Sangolda",
-    location: "Sangolda, North Goa",
+    location: "Sangolda, Goa",
     category: "Villas",
     developer: "Ellora Group",
     hero: { src: "/projects/zinnia-c0.jpg", alt: "The Zinnia villa exterior, Sangolda" },
@@ -355,7 +355,7 @@ export const projects: Project[] = [
       eyebrow: "The project",
       title: "Panoramic views, private pools, smart homes",
       paragraphs: [
-        "The Zinnia brings Ellora's villa craft to leafy Sangolda — 4 BHK villas with panoramic views, private pools and smart home automation, in one of North Goa's most sought-after residential villages.",
+        "The Zinnia brings Ellora's villa craft to leafy Sangolda — 4 BHK villas with panoramic views, private pools and smart home automation, in one of Goa's most sought-after residential villages.",
         "Sangolda sits on the Porvorim plateau between Panaji and the beach belt, prized for its old trees, design stores and quiet lanes. Construction has started; full commercials, floor plans and unit availability are presented at the showcase.",
       ],
     },
@@ -382,7 +382,7 @@ export const projects: Project[] = [
       { src: "/projects/zinnia-c1.jpg", alt: "The Zinnia villas, Sangolda" },
     ],
     locationCopy:
-      "Sangolda is the connoisseur's corner of North Goa — a heritage village of tree-lined lanes and design boutiques on the Porvorim plateau, 15 minutes from Panaji one way and the Calangute belt the other.",
+      "Sangolda is the connoisseur's corner of Goa — a heritage village of tree-lined lanes and design boutiques on the Porvorim plateau, 15 minutes from Panaji one way and the Calangute belt the other.",
     distances: [
       { label: "Porvorim", value: "5–10 min drive" },
       { label: "Calangute–Baga beaches", value: "15 min drive" },
@@ -400,7 +400,7 @@ export const projects: Project[] = [
     slug: "casa-margarida",
     name: "Casa Margarida",
     tagline: "More than a home — a seaside legacy in Calangute",
-    location: "Calangute, North Goa",
+    location: "Calangute, Goa",
     category: "Apartments",
     hero: { src: "/projects/casa-magarida-c2.jpg", alt: "Front elevation of Casa Margarida, Calangute" },
     facts: [
@@ -448,7 +448,7 @@ export const projects: Project[] = [
       { src: "/projects/casa-magarida-c5.jpg", alt: "Living room at Casa Margarida" },
     ],
     locationCopy:
-      "Calangute is the centre of gravity of North Goa's coast — restaurants, nightlife and the season's energy on the Baga strip, with the quieter village lanes of Agarwado behind it. Casa Margarida sits in that calm pocket, 1.5 km from the sand.",
+      "Calangute is the centre of gravity of Goa's coast — restaurants, nightlife and the season's energy on the Baga strip, with the quieter village lanes of Agarwado behind it. Casa Margarida sits in that calm pocket, 1.5 km from the sand.",
     distances: [
       { label: "Calangute beach", value: "1.5 km" },
       { label: "Baga strip", value: "5–10 min drive" },
@@ -465,7 +465,7 @@ export const projects: Project[] = [
     slug: "amora-horizon",
     name: "Amora Horizon",
     tagline: "Resort-style luxury living in Nerul",
-    location: "Nerul, North Goa",
+    location: "Nerul, Goa",
     category: "Apartments",
     hero: { src: "/projects/amora-c1.jpg", alt: "Terrace pool with valley views at Amora Horizon, Nerul" },
     facts: [
@@ -597,7 +597,7 @@ export const projects: Project[] = [
     slug: "mmirari-house",
     name: "Mmirari House",
     tagline: "Paddy-field-side living in Reis Magos",
-    location: "Reis Magos, North Goa",
+    location: "Reis Magos, Goa",
     category: "Apartments",
     hero: { src: "/projects/mmirari-0.jpg", alt: "Mmirari House facade at dusk, Reis Magos" },
     facts: [
@@ -610,7 +610,7 @@ export const projects: Project[] = [
       eyebrow: "The project",
       title: "Coastal living at its finest",
       paragraphs: [
-        "Welcome to Mmirari House, an exclusive apartment and penthouse project in picturesque Reis Magos, North Goa. Set in the coastal zone adjoining beautiful paddy fields, it blends opulence and tranquillity — an ideal vacation home for those looking to unwind, and a compelling avenue for return on investment.",
+        "Welcome to Mmirari House, an exclusive apartment and penthouse project in picturesque Reis Magos, Goa. Set in the coastal zone adjoining beautiful paddy fields, it blends opulence and tranquillity — an ideal vacation home for those looking to unwind, and a compelling avenue for return on investment.",
         "Ground-floor residences carry their own private pool, deck and lawn share; penthouses add terrace pools; and every resident shares the expansive terrace infinity pool with its views of paddy fields and rolling hills. Indo-Portuguese architecture, elegant interiors and a gated address complete the picture.",
       ],
     },

@@ -6,7 +6,7 @@ export function WhyGoa() {
   const features = [
     {
       icon: <MapPin className="h-8 w-8 text-bronze" strokeWidth={1.5} />,
-      title: "Heart of North Goa",
+      title: "Heart of Goa",
       text: "Live at the center\nof everything\nyou love.",
     },
     {
@@ -32,7 +32,7 @@ export function WhyGoa() {
         <Reveal>
           <SectionHeading
             eyebrow="Location"
-            title="The Heart of North Goa"
+            title="The Heart of Goa"
             copy="Where every lifestyle finds its perfect address."
             light
             align="center"
