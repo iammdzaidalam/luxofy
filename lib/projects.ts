@@ -467,7 +467,7 @@ export const projects: Project[] = [
     tagline: "Resort-style luxury living in Nerul",
     location: "Nerul, Goa",
     category: "Apartments",
-    hero: { src: "/projects/amora-c1.jpg", alt: "Terrace pool with valley views at Amora Horizon, Nerul" },
+    hero: { src: "/projects/amora-c2.jpg", alt: "Dusk facade at Amora Horizon, Nerul" },
     facts: [
       { label: "Configuration", value: "2 & 3 BHK residences" },
       { label: "Area", value: "109.70 sq m onwards" },
@@ -507,7 +507,14 @@ export const projects: Project[] = [
       "24×7 security, gated community",
     ],
     gallery: [
-      { src: "/projects/amora-c1.jpg", alt: "Terrace pool with valley views at Amora Horizon" },
+      { src: "/projects/amora-c2.jpg", alt: "Dusk facade at Amora Horizon" },
+      { src: "/projects/amora-c3.jpg", alt: "Tropical pool courtyard at Amora Horizon" },
+      { src: "/projects/amora-c4.jpg", alt: "Aerial view of the Amora Horizon enclave at night" },
+      { src: "/projects/amora-c5.jpg", alt: "Lap pool at Amora Horizon" },
+      { src: "/projects/amora-c6.jpg", alt: "Living room and kitchen at Amora Horizon" },
+      { src: "/projects/amora-c7.jpg", alt: "Bedroom at Amora Horizon" },
+      { src: "/projects/amora-c8.jpg", alt: "Rooftop deck with valley views at Amora Horizon" },
+      { src: "/projects/amora-c9.jpg", alt: "Arched entrance court at Amora Horizon" },
     ],
     locationCopy:
       "Nerul sits on the calm inner bank of the Sinquerim river — five minutes from the Candolim–Sinquerim beach belt and Fort Aguada, fifteen from Panaji, with the Coco beach jetty and the coast's best restaurants around the corner.",

@@ -293,9 +293,19 @@ export const speakers = [
     image: "/speakers/yogita-arya.jpg",
   },
   {
-    name: "Money Singh",
+    name: "Money Singh Wadhwa",
     role: "Partner, Luxofy.in",
     image: "/speakers/money-singh.jpeg",
+  },
+  {
+    name: "Vishal Bhamare",
+    role: "Director, Luxofy",
+    image: "/speakers/vishal-bhamare.jpg",
+  },
+  {
+    name: "Vikas Pali",
+    role: "Director, Luxofy",
+    image: "/speakers/vikas-pali.jpg",
   },
 ];
 
