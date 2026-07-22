@@ -57,7 +57,7 @@ function FaqItem({
 }
 
 export function Faq() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
   const midpoint = Math.ceil(faqs.length / 2);
   const columns = [faqs.slice(0, midpoint), faqs.slice(midpoint)];
 

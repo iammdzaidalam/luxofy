@@ -48,8 +48,8 @@ body {
   color: var(--color-cream);
 }
 
-/* Display serif stays light and elegant; never bold */
 .font-display {
+  font-family: var(--font-display);
   letter-spacing: 0.005em;
 }
 

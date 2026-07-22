@@ -3,11 +3,11 @@ const u = (id: string, w: number, q = 80) =>
 
 export const heroContent = {
   eyebrow: "Think Reality x Luxofy Properties",
-  title: "Goa Luxury Investor Showcase",
-  subtitle: "Discover premium investment opportunities in Goa",
+  title: "Goa Investor Showcase",
+  subtitle: "From apartments to villas, we have got you covered",
   date: "9 August 2026",
   city: "Delhi NCR",
-  badge: "Exclusive. Invite only.",
+  badge: "",
   poster: u("1512343879784-a960bf40e7f2", 1920, 70),
   videoSources: [
     "https://videos.pexels.com/video-files/3576378/3576378-hd_1920_1080_25fps.mp4",
@@ -119,6 +119,8 @@ export type ProjectCategory = "Villas" | "Apartments" | "Upcoming";
 
 export interface CatalogItem {
   name: string;
+  /** Slug of the dedicated landing page under /projects, when one exists. */
+  slug?: string;
   location: string;
   categories: ProjectCategory[];
   blurb: string;
@@ -132,6 +134,7 @@ export const catalog: CatalogItem[] = [
   // Villas
   {
     name: "The Pine Cliff",
+    slug: "pine-cliff",
     location: "Parra, North Goa",
     categories: ["Villas"],
     blurb:
@@ -143,6 +146,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Floretta",
+    slug: "the-floretta",
     location: "Parra, North Goa",
     categories: ["Villas"],
     blurb:
@@ -153,6 +157,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Casa De Fresco",
+    slug: "casa-de-fresco",
     location: "Guirim, North Goa",
     categories: ["Villas"],
     blurb:
@@ -162,6 +167,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "The Azalea",
+    slug: "the-azalea",
     location: "Candolim, North Goa",
     categories: ["Villas"],
     blurb:
@@ -191,6 +197,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "The Zinnia",
+    slug: "the-zinnia",
     location: "Sangolda, North Goa",
     categories: ["Villas", "Upcoming"],
     blurb: "4 BHK villas with panoramic views, private pools and smart homes in leafy Sangolda.",
@@ -212,6 +219,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Casa Magarida",
+    slug: "casa-margarida",
     location: "Baga Arpora, North Goa",
     categories: ["Apartments"],
     blurb: "2 BHK apartments with a swimming pool and a clubhouse with gym and yoga room.",
@@ -228,6 +236,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Mmirari House",
+    slug: "mmirari-house",
     location: "Reis Magos, North Goa",
     categories: ["Apartments"],
     blurb:
@@ -239,6 +248,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Serene Meadows",
+    slug: "serene-meadows",
     location: "Kadamba Plateau, North Goa",
     categories: ["Apartments"],
     blurb:
@@ -248,6 +258,7 @@ export const catalog: CatalogItem[] = [
   },
   {
     name: "Amora Horizon",
+    slug: "amora-horizon",
     location: "Nerul, North Goa",
     categories: ["Apartments"],
     blurb:
@@ -368,80 +379,20 @@ export const faqs = [
     a: "We keep the room small so every attendee gets a private consultation slot and genuine access to the team. Registrations are reviewed and confirmed by our team over a short call.",
   },
   {
-    q: "Can I bring my spouse or a family member?",
-    a: "Mention your plus one during the confirmation call and the team will do its best to accommodate seating and materials.",
-  },
-  {
-    q: "I am an NRI. Can I buy property in Goa?",
-    a: "Yes. NRIs can freely purchase residential property in India under FEMA regulations. Our advisors cover funding routes, repatriation and taxation for NRI buyers at the event, and we offer video consultations across time zones.",
-  },
-  {
     q: "What is the minimum investment to consider Goa seriously?",
-    a: "In the current Luxofy portfolio, apartments start around ₹1.5 crore (Casa Magarida in Baga Arpora, Mmirari House in Reis Magos) and villas from ₹3.94 crore (Casa Adelaide in Aldona). We will be honest if your budget is better deployed elsewhere.",
-  },
-  {
-    q: "Are the rental yields you quote realistic?",
-    a: "The ranges we present reflect actual statements from managed villas during recent seasons. Yields depend heavily on location, design and management, which is exactly what the rental strategy session covers.",
+    a: "In the current Luxofy portfolio, apartments start around ₹1.5 crore and villas from ₹3.94 crore. We will be honest if your budget is better deployed elsewhere.",
   },
   {
     q: "Who manages the property if I live in Delhi or abroad?",
     a: "Luxofy runs a rental and management desk: housekeeping, guest management, listings, repairs and owner statements. You can also appoint any third party manager you prefer.",
   },
   {
-    q: "Is Goa property a bubble?",
-    a: "Prices have risen quickly, which deserves scrutiny. Our research session addresses this directly with supply data, tourism numbers and comparisons to earlier cycles, so you can judge for yourself.",
-  },
-  {
-    q: "What legal checks do you run on the projects shown?",
-    a: "Projects carry RERA registration where applicable and title documentation is available for your lawyer's review before any commitment.",
-  },
-  {
-    q: "Can I get a home loan for a Goa property?",
-    a: "Yes. Leading banks and housing finance companies lend on the projects we present. Loan guidance, including NRI loan programs, is available at the event.",
-  },
-  {
-    q: "What are the additional costs beyond the sticker price?",
-    a: "Budget roughly 7 to 9 percent extra: stamp duty and registration around 4 to 5 percent in Goa, plus GST on under construction homes, legal fees and interiors where homes are sold bare shell.",
-  },
-  {
-    q: "North Goa or South Goa, which is better for investment?",
-    a: "North Goa offers stronger rental demand and liquidity; South Goa offers larger land parcels at lower entry prices. The current Luxofy portfolio is concentrated in North Goa: Parra, Candolim, Calangute, Aldona, Bastora, Sangolda, Reis Magos and more.",
-  },
-  {
-    q: "Do you offer site visits to Goa after the event?",
-    a: "Yes. Assisted site visits can be arranged with the team; you can plan one at the event or during your confirmation call.",
-  },
-  {
-    q: "What happens after I register on this page?",
-    a: "You receive an instant confirmation email with a calendar invite. Our team then calls you to understand your goals and confirm your seat.",
-  },
-  {
-    q: "Why do you ask for budget and income details in the form?",
-    a: "It helps us prepare relevant options and pair you with the right advisor before you arrive, so your consultation time is spent on specifics rather than basics. Your information stays confidential and is never sold.",
-  },
-  {
-    q: "Is my personal data safe?",
-    a: "Yes. Data is encrypted in transit and at rest, used only by Think Reality and Luxofy for this event and follow up, and never shared with third party marketers. See our privacy policy for details.",
-  },
-  {
     q: "Can I book a property at the event itself?",
     a: "You can express interest in specific units at the event, but there is no pressure to transact. Most buyers visit Goa first, and we encourage that.",
   },
   {
-    q: "What if I register but cannot attend?",
-    a: "Let us know and we will move you to a future showcase or arrange a private video walkthrough of the projects that interest you.",
-  },
-  {
-    q: "Do the projects come with furniture and interiors?",
-    a: "Floretta in Parra is sold fully furnished. On several other projects, interior packages are available and priced separately; the team will walk you through options per project.",
-  },
-  {
-    q: "What documents should I bring to the event?",
-    a: "Just a government photo ID for entry. Nothing else is needed.",
-  },
-  {
-    q: "What happens in the one on one consultation?",
-    a: "A private session with the team to map specific projects against your budget, timeline and purpose, with floor plans, availability and commercials on hand.",
+    q: "What happens after I register on this page?",
+    a: "You receive an instant confirmation email with a calendar invite. Our team then calls you to understand your goals and confirm your seat.",
   },
 ];
 

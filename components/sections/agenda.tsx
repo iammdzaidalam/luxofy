@@ -23,10 +23,10 @@ export function Agenda() {
             </Reveal>
           </div>
 
-          <ol className="relative border-l border-line pl-10 md:pl-14">
+          <ol className="relative flex flex-col gap-8 border-l border-line pl-10 md:pl-14">
             {agenda.map((item, i) => (
               <Reveal key={item} delay={i * 0.05}>
-                <li className="relative pb-14 last:pb-0">
+                <li className="relative">
                   <span
                     className="absolute -left-10 top-3 h-[9px] w-[9px] -translate-x-1/2 rounded-full border-2 border-bronze bg-ivory md:-left-14"
                     aria-hidden="true"

@@ -47,46 +47,48 @@ export function Hero() {
         style={{ y: contentY, opacity: contentOpacity }}
         className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center px-6 pb-24 pt-36 text-center will-change-transform"
       >
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.25, ease: EASE }}
-          className="text-[10px] font-medium uppercase tracking-[0.4em] text-cream/80"
+          className="flex items-center gap-5 text-cream/70"
         >
-          {heroContent.eyebrow} · {heroContent.badge}
-        </motion.p>
+          <img src="/think-reality-logo.webp" alt="Think Reality" className="h-9 w-auto object-contain brightness-0 invert opacity-90" />
+          <span className="text-[11px] font-medium uppercase tracking-[0.4em]">x</span>
+          <img src="/luxofy-logo.png" alt="Luxofy Properties" className="h-5 w-auto object-contain brightness-0 invert opacity-90" />
+        </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 26 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.4, ease: EASE }}
-          className="font-display mt-7 text-[3.1rem] font-normal leading-[1.06] text-cream sm:text-6xl md:text-[4.6rem]"
+          className="font-display mt-16 text-center font-normal leading-[1.2] text-cream drop-shadow-2xl [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]"
         >
-          Goa Luxury
-          <br />
-          Investor Showcase
+          <span className="block text-[10vw] leading-[0.9] md:text-[5rem]">GOA'S</span>
+          <span className="block mt-5 text-[4vw] tracking-normal md:text-[2rem]">MOST EXCLUSIVE</span>
+          <span className="block mt-3 text-[4vw] tracking-normal whitespace-nowrap md:text-[2rem]">INVESTOR SHOWCASE</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6, ease: EASE }}
-          className="mt-6 max-w-md text-[15px] font-light leading-relaxed text-cream/85 md:text-base"
+          className="mx-auto mt-16 max-w-xl text-lg font-light leading-relaxed text-cream/90 md:text-xl"
         >
-          {heroContent.subtitle}. {heroContent.date}, {heroContent.city}.
+          {heroContent.subtitle}
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8, ease: EASE }}
-          className="mt-10"
+          className="mt-16"
         >
           <Link
             href="/register"
-            className="pill inline-flex items-center gap-2.5 bg-cream/95 px-9 py-4 text-[12px] font-medium uppercase tracking-[0.14em] text-ink transition-colors duration-300 hover:text-cream"
+            className="pill inline-flex items-center gap-2.5 bg-bronze px-9 py-4 text-[12px] font-medium uppercase tracking-[0.14em] text-cream transition-colors duration-300 hover:text-cream"
           >
-            <span className="pill-fill bg-bronze" aria-hidden="true" />
+            <span className="pill-fill bg-ink" aria-hidden="true" />
             Reserve your seat
           </Link>
         </motion.div>

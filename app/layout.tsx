@@ -6,18 +6,18 @@ import { UtmCapture } from "@/components/utm-capture";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
   display: "swap",
+  variable: "--font-cormorant",
 });
 
 const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
+  variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {

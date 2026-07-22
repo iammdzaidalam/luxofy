@@ -153,7 +153,7 @@ export function Footer() {
       <div className="mt-16 overflow-hidden md:mt-20" aria-hidden="true">
         <motion.div
           style={{ y: wordmarkY }}
-          className="font-display flex select-none items-end justify-between px-3 text-[14vw] font-normal leading-[0.9] text-ink will-change-transform md:px-6"
+          className="font-display flex select-none items-end justify-between px-3 -mb-[2vw] text-[14vw] font-normal leading-[0.75] text-ink will-change-transform md:px-6"
         >
           {"LUXOFY".split("").map((letter, i) => (
             <span key={i}>{letter}</span>

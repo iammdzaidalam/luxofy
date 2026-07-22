@@ -43,9 +43,15 @@ function ProjectsBand() {
 }
 
 function ProjectCard({ item }: { item: CatalogItem }) {
+  const detailHref = item.slug ? `/projects/${item.slug}` : "/register";
   return (
     <article className="group flex h-full flex-col">
-      <div className="relative aspect-[4/3] overflow-hidden bg-parchment">
+      <Link
+        href={detailHref}
+        tabIndex={-1}
+        aria-hidden="true"
+        className="relative block aspect-[4/3] overflow-hidden bg-parchment"
+      >
         <Image
           src={item.image.src}
           alt={item.image.alt}
@@ -58,7 +64,7 @@ function ProjectCard({ item }: { item: CatalogItem }) {
             {item.status}
           </span>
         ) : null}
-      </div>
+      </Link>
       <div className="flex flex-1 flex-col pt-6">
         <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-bronze">{item.location}</p>
         <h3 className="font-display mt-2.5 text-[1.75rem] font-medium leading-tight text-ink">
@@ -86,10 +92,10 @@ function ProjectCard({ item }: { item: CatalogItem }) {
           ) : null}
         </dl>
         <Link
-          href="/register"
+          href={detailHref}
           className="group/link mt-5 inline-flex items-center gap-2.5 text-[11px] font-medium uppercase tracking-[0.16em] text-ink transition-colors hover:text-bronze"
         >
-          Enquire at the showcase
+          {item.slug ? "View project" : "Enquire at the showcase"}
           <svg width="14" height="10" viewBox="0 0 16 12" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="transition-transform duration-300 group-hover/link:translate-x-1">
             <path d="M10 1L15 6L10 11M15 6H0" />
           </svg>
