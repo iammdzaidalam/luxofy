@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function RegisterPage() {
   return (
-    <div className="min-h-dvh bg-ivory lg:grid lg:grid-cols-[2fr_3fr]">
+    <div className="min-h-dvh bg-ivory lg:grid lg:h-dvh lg:grid-cols-[2fr_3fr] lg:overflow-hidden">
       {/* Event summary rail */}
-      <aside className="relative flex flex-col justify-between bg-ink px-8 py-10 text-cream md:px-12 lg:sticky lg:top-0 lg:h-dvh lg:py-14">
+      <aside className="relative flex flex-col justify-between bg-ink px-8 py-10 text-cream md:px-12 lg:h-dvh lg:overflow-hidden lg:py-14">
         <div>
           <div className="flex items-center justify-between gap-6">
             <Link href="/" className="inline-flex items-baseline gap-2">
@@ -68,7 +68,7 @@ export default function RegisterPage() {
       </aside>
 
       {/* Form */}
-      <main className="px-6 py-12 md:px-14 md:py-16 lg:px-20">
+      <main className="px-6 py-12 md:px-14 md:py-16 lg:h-dvh lg:overflow-y-auto lg:px-20">
         <div className="mx-auto max-w-2xl">
           <RegisterForm />
           <div className="mt-14 border-t border-line pt-6 lg:hidden">

@@ -12,7 +12,7 @@ export const site = {
     venueNote: "Venue shared with confirmed guests",
   },
   contact: {
-    phone: "+91 79690 33999",
+    phone: "+91 76679 21536",
     email: "sales@luxofy.in",
     website: "https://www.luxofy.in",
   },
