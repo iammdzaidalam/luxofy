@@ -287,7 +287,7 @@ export const speakers = [
   },
   {
     name: "Money Singh Wadhwa",
-    role: "Partner, Luxofy.in",
+    role: "Partner, Luxofy",
     image: "/speakers/money-singh.jpeg",
   },
   {
