@@ -15,7 +15,7 @@ export function Speakers() {
           />
         </Reveal>
 
-        <div className="mx-auto mt-16 grid max-w-5xl gap-x-10 gap-y-14 sm:grid-cols-3">
+        <div className="mx-auto mt-16 flex max-w-5xl flex-wrap justify-center gap-x-14 gap-y-14">
           {speakers.map((speaker, i) => (
             <Reveal key={speaker.name} delay={i * 0.1}>
               <figure className="group text-center">
