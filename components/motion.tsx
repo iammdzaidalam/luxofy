@@ -59,7 +59,7 @@ export function Parallax({
 
   return (
     <div ref={ref} className={className}>
-      <motion.div style={{ y }} className="h-full w-full will-change-transform">
+      <motion.div style={{ y }} className="relative h-full w-full will-change-transform">
         {children}
       </motion.div>
     </div>
