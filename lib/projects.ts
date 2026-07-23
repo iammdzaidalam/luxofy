@@ -194,7 +194,7 @@ export const projects: Project[] = [
       { label: "Mapusa", value: "10 min drive" },
       { label: "Calangute strip", value: "15 min drive" },
     ],
-    possession: "Completed · December 2025",
+    possession: "Ready to move in",
     rera: "PRGO08221740",
     priceLabel: "₹6.21 Cr onwards",
     metaDescription:
@@ -407,18 +407,18 @@ export const projects: Project[] = [
       { label: "Configuration", value: "2 BHK apartments" },
       { label: "Saleable area", value: "101.87 sq m onwards" },
       { label: "Price", value: "₹1.52 Cr onwards" },
-      { label: "Possession", value: "Within 1 month" },
+      { label: "Possession", value: "3 months" },
     ],
     overview: {
       eyebrow: "The project",
       title: "Coastal charm in Calangute's quiet quarter",
       paragraphs: [
         "Welcome to Casa Margarida, a coastal sanctuary in the heart of Calangute. The property is an ideal second home as well as a profitable avenue of investment — an unparalleled blend of coastal charm and vibrant heritage, in a unique and inviting living space.",
-        "Casa Margarida enjoys the rare advantage of Calangute's geography: the vibrant Calangute–Baga strip within easy reach, yet nestled in a quaint, quiet part of the village, with the beach inside a 1.5 km radius. Only the last three units remain, with possession within a month.",
+        "Casa Margarida enjoys the rare advantage of Calangute's geography: the vibrant Calangute–Baga strip within easy reach, yet nestled in a quaint, quiet part of the village, with the beach inside a 1.5 km radius. Only the last three units remain, with possession in 3 months.",
       ],
     },
     highlights: [
-      { title: "Last 3 units", body: "The penthouses are sold out and three 2 BHK residences remain, ready within a month." },
+      { title: "Last 3 units", body: "The penthouses are sold out and three 2 BHK residences remain, with possession in 3 months." },
       { title: "Pool and clubhouse", body: "A swimming pool with wooden deck, plus a clubhouse with a gym and a yoga room." },
       { title: "Premium finishes", body: "Spacious, semi furnished, airy interiors — Kohler or Jaquar fittings, UPVC windows, designer tiles." },
       { title: "Calangute's coveted pocket", body: "A gated community 1.5 km from Calangute beach, between the strip and the quiet village." },
@@ -455,10 +455,10 @@ export const projects: Project[] = [
       { label: "Candolim", value: "10 min drive" },
       { label: "Mapusa", value: "15 min drive" },
     ],
-    possession: "Possession within 1 month",
+    possession: "Possession in 3 months",
     priceLabel: "₹1.52 Cr onwards",
     metaDescription:
-      "Casa Margarida, Calangute — last three 2 BHK apartments with pool and clubhouse, 1.5 km from the beach. ₹1.52 Cr onwards, possession within a month.",
+      "Casa Margarida, Calangute — last three 2 BHK apartments with pool and clubhouse, 1.5 km from the beach. ₹1.52 Cr onwards, possession in 3 months.",
   },
 
   {
@@ -663,7 +663,7 @@ export const projects: Project[] = [
       { label: "Candolim", value: "10–15 min drive" },
       { label: "Panaji", value: "15 min drive" },
     ],
-    possession: "Limited units · ready inventory",
+    possession: "Possession in 3 months",
     priceLabel: "₹1.54 Cr onwards",
     metaDescription:
       "Mmirari House, Reis Magos — boutique 2 BHK residences with private plunge pools, terrace pools and a rooftop infinity pool over the paddy fields. ₹1.54 Cr onwards.",

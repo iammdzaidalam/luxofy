@@ -19,14 +19,14 @@ export const heroContent = {
 export const trustStats = [
   { value: 300, suffix: "+", label: "Properties sold" },
   { value: 150, suffix: "+", label: "Active listings" },
-  { value: 14, suffix: "", label: "Projects in the Goa portfolio" },
+  { value: 13, suffix: "", label: "Projects in the Goa portfolio" },
   { value: 3, suffix: "", label: "Destinations: Goa, Kasauli, Kumarhatti" },
 ];
 
 export const trustLogos = ["Think Reality", "Luxofy Properties", "STAIL Realty OS"];
 
 export const trustIntro =
-  "Hosted by Think Reality, RERA certified channel partners, with Luxofy Properties, the developer behind fourteen luxury projects across Goa, including the sold out Eleva Suites in Calangute.";
+  "Hosted by Think Reality, RERA certified channel partners, with Luxofy Properties, the developer behind thirteen luxury projects across Goa, including the sold out Eleva Suites in Calangute.";
 
 /** Editorial collage around the intro heading, all from the Luxofy portfolio. */
 export const introCollage = [
@@ -47,7 +47,7 @@ export const whyAttend = [
   },
   {
     title: "Premium projects",
-    body: "Fourteen villa and apartment projects, including off-market opportunities.",
+    body: "Thirteen villa and apartment projects, including off-market opportunities.",
   },
   {
     title: "Rental yield strategy",
@@ -148,7 +148,7 @@ export const catalog: CatalogItem[] = [
     blurb:
       "4 BHK fully furnished villas with private pools and a rent back facility, in the lanes of Parra.",
     config: "4 BHK, fully furnished",
-    status: "Under construction",
+    status: "Ready to move in",
     image: { src: "/projects/floretta-0.jpg", alt: "Private pool at Floretta, Parra" },
   },
   {
@@ -158,6 +158,7 @@ export const catalog: CatalogItem[] = [
     blurb:
       "3 bedroom villas with stunning field views, jacuzzi decks and private amenities in quiet Guirim.",
     config: "3 bedroom villas",
+    status: "Ready to move in",
     image: { src: "/projects/casa-de-fresco-1.jpg", alt: "Back view of the Casa De Fresco villas" },
   },
   {
@@ -168,7 +169,7 @@ export const catalog: CatalogItem[] = [
       "Four field facing 5 BHK mansions with private pools and steamers in the bathrooms, a 2.3 km walk from Candolim beach.",
     price: "₹9 Cr onwards",
     config: "5 BHK · 5,380 sq ft super built up",
-    status: "Possession March 2026",
+    status: "Possession December 2027",
     image: { src: "/projects/azalea-0.jpg", alt: "Pool view at night at The Azalea, Candolim" },
   },
   {
@@ -179,15 +180,6 @@ export const catalog: CatalogItem[] = [
     price: "₹3.94 Cr onwards",
     config: "4 BHK · 4,243 sq ft",
     image: { src: "/projects/adelaide-0.jpg", alt: "The Casa Adelaide villas at Aldona" },
-  },
-  {
-    name: "Casa Hill Crest",
-    location: "Bastora, Goa",
-    categories: ["Villas", "Upcoming"],
-    blurb: "3 and 4 BHK villas with panoramic views, private pools and smart homes.",
-    config: "3 and 4 BHK villas",
-    status: "Launching soon · Construction started",
-    image: { src: "/projects/hill-crest-c0.jpg", alt: "Front view of Casa Hill Crest, Bastora" },
   },
   {
     name: "The Zinnia",
@@ -208,7 +200,7 @@ export const catalog: CatalogItem[] = [
     blurb: "2 BHK apartments near Calangute beach with private plunge pools. Fully sold out.",
     config: "2 BHK with plunge pools",
     status: "Sold out",
-    image: { src: "/projects/eleva-c1.jpg", alt: "Pool side at Eleva Suites, Calangute" },
+    image: { src: "/projects/eleva-c0.jpg", alt: "Eleva Suites, Calangute" },
   },
   {
     name: "Casa Magarida",
@@ -217,14 +209,8 @@ export const catalog: CatalogItem[] = [
     blurb: "2 BHK apartments with a swimming pool and a clubhouse with gym and yoga room.",
     price: "₹1.52 Cr onwards",
     config: "2 BHK · 1,096 sq ft",
-    image: { src: "/projects/casa-magarida-c1.jpg", alt: "Pool at Casa Magarida, Baga Arpora" },
-  },
-  {
-    name: "Panoramic Vista",
-    location: "Bicholim, Goa",
-    categories: ["Apartments"],
-    blurb: "Apartments in fast growing Bicholim. Full details presented at the showcase.",
-    image: { src: "/projects/panoramic-vista-c0.jpg", alt: "Panoramic Vista, Bicholim" },
+    status: "Possession in 3 months",
+    image: { src: "/projects/casa-magarida-c2.jpg", alt: "Front elevation of Casa Magarida" },
   },
   {
     name: "Mmirari House",
@@ -234,17 +220,8 @@ export const catalog: CatalogItem[] = [
       "Boutique 2 BHK residences; ground floor homes carry private plunge pools and every resident shares the terrace pool.",
     price: "₹1.54 Cr onwards",
     config: "2 BHK · 1,243 to 1,760 sq ft salable",
-    status: "Limited units remaining",
+    status: "Possession in 3 months",
     image: { src: "/projects/mmirari-0.jpg", alt: "Mmirari House facade at dusk, Reis Magos" },
-  },
-  {
-    name: "Serene Meadows",
-    location: "Kadamba Plateau, Goa",
-    categories: ["Apartments"],
-    blurb:
-      "An elegant enclave of 63 spacious 2 BHK and 8 refined 3 BHK apartments with top amenities and seamless connectivity.",
-    config: "2 and 3 BHK apartments",
-    image: { src: "/projects/serene-meadows-c0.jpg", alt: "Double height atrium at Serene Meadows" },
   },
   {
     name: "Amora Horizon",
@@ -253,7 +230,23 @@ export const catalog: CatalogItem[] = [
     blurb:
       "2 and 3 BHK residences with private pools, a tropical forest theme, pickle ball court, terrace pool and restaurant.",
     config: "2 and 3 BHK residences",
-    image: { src: "/projects/amora-c0.jpg", alt: "Terrace pool with valley views at Amora Horizon, Nerul" },
+    image: { src: "/projects/amora-c2.jpg", alt: "Dusk facade at Amora Horizon, Nerul" },
+  },
+  {
+    name: "Serene Meadows",
+    location: "Kadamba Plateau, Goa",
+    categories: ["Apartments"],
+    blurb:
+      "An elegant enclave of 63 spacious 2 BHK and 8 refined 3 BHK apartments with top amenities and seamless connectivity.",
+    config: "2 and 3 BHK apartments",
+    image: { src: "/projects/serene-meadows-c1.jpg", alt: "Dusk facade at Serene Meadows" },
+  },
+  {
+    name: "Panoramic Vista",
+    location: "Bicholim, Goa",
+    categories: ["Apartments"],
+    blurb: "Apartments in fast growing Bicholim. Full details presented at the showcase.",
+    image: { src: "/projects/panoramic-vista-c0.jpg", alt: "Panoramic Vista, Bicholim" },
   },
 
   // Upcoming only
@@ -356,7 +349,6 @@ export const gallery = [
   { src: "/projects/mmirari-3.jpg", alt: "Mmirari House exterior with pool, Reis Magos", tag: "Apartments", tall: true },
   { src: "/projects/floretta-1.jpg", alt: "Completed Floretta villa pool, photographed on site", tag: "Villas", tall: false },
   { src: "/projects/serene-meadows-c0.jpg", alt: "Double height atrium at Serene Meadows, Kadamba Plateau", tag: "Apartments", tall: false },
-  { src: "/projects/hill-crest-c1.jpg", alt: "Back view of Casa Hill Crest, Bastora", tag: "Villas", tall: false },
   { src: "/projects/casa-magarida-c1.jpg", alt: "Pool at Casa Magarida, Baga Arpora", tag: "Apartments", tall: false },
   { src: "/projects/casa-de-fresco-0.jpg", alt: "Jacuzzi deck at Casa De Fresco, Guirim", tag: "Villas", tall: false },
   { src: "/projects/amora-c0.jpg", alt: "Terrace pool at Amora Horizon, Nerul", tag: "Apartments", tall: false },
