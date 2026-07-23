@@ -292,7 +292,7 @@ export const speakers = [
   },
   {
     name: "Vishal Bhamare",
-    role: "Director, Luxofy",
+    role: "Co-founder, Luxofy",
     image: "/speakers/vishal-bhamare.jpg",
   },
   {
