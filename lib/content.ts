@@ -297,7 +297,7 @@ export const speakers = [
   },
   {
     name: "Vikas Pali",
-    role: "Co-founder, Luxofy",
+    role: "Director, Luxofy",
     image: "/speakers/vikas-pali.jpg",
   },
 ];
