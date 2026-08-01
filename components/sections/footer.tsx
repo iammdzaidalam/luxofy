@@ -21,6 +21,7 @@ const socials = [
   { label: "LinkedIn", href: site.social.linkedin },
   { label: "YouTube", href: site.social.youtube },
   { label: "Facebook", href: site.social.facebook },
+  { label: "X", href: site.social.x },
 ];
 
 /**

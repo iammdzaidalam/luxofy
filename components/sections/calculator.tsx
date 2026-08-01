@@ -143,7 +143,7 @@ export function InvestmentCalculator() {
         20,
         195
       );
-      doc.text("luxofy.in  |  sales@luxofy.in  |  +91 79690 33999", 20, 215);
+      doc.text("thinkreality.co.in  |  sales@thinkreality.co.in  |  +91 92205 04031", 20, 215);
 
       doc.save("goa-investment-projection.pdf");
     } finally {

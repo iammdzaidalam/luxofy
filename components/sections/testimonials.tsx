@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { testimonials } from "@/lib/content";
-import { site } from "@/lib/site";
 import { Container, SectionHeading } from "@/components/ui";
 import { Reveal, EASE } from "@/components/motion";
 
@@ -76,7 +75,7 @@ export function Testimonials() {
                 <p className="mt-3 max-w-[240px] text-[13px] leading-relaxed text-cream/60">
                   The reviews shown here are published on{" "}
                   <a
-                    href={site.contact.website}
+                    href="https://www.luxofy.in"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cream underline underline-offset-2 transition-colors hover:text-bronze"
