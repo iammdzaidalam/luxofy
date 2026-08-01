@@ -308,6 +308,16 @@ export const speakers = [
     role: "Partner, Luxofy.in",
     image: "/speakers/money-singh.jpeg",
   },
+  {
+    name: "Vishal Bhamare",
+    role: "Co-founder, Luxofy",
+    image: "/speakers/vishal-bhamare.jpg",
+  },
+  {
+    name: "Vikas Pali",
+    role: "Director, Luxofy",
+    image: "/speakers/vikas-pali.jpg",
+  },
 ];
 
 /* Real Google reviews, as published on luxofy.in */
