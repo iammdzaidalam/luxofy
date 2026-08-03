@@ -259,6 +259,9 @@ export function RegisterForm() {
       setErrors((prev) => ({ ...prev, email: "Enter a valid email address" }));
       return;
     }
+    // A failed resend must not unmount the code input — an earlier code may
+    // still be valid and the user needs somewhere to type it.
+    const hadCode = otpState === "sent" || otpState === "verifying";
     setOtpState("sending");
     setOtpMessage("");
     try {
@@ -276,7 +279,7 @@ export function RegisterForm() {
           : "Code sent to your inbox. Check spam if it does not arrive within a minute."
       );
     } catch (error) {
-      setOtpState("idle");
+      setOtpState(hadCode ? "sent" : "idle");
       setOtpMessage(error instanceof Error ? error.message : "Could not send the code");
     }
   }

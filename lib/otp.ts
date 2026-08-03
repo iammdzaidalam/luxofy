@@ -23,8 +23,8 @@ function otpEmailHtml(code: string): string {
 
 /**
  * Generates a one time password and emails it. If no provider is configured
- * or delivery fails, the code is returned so the form can surface it in dev
- * mode and the flow never hard-blocks on email.
+ * or delivery fails, the code comes back as `devCode` — the send route only
+ * forwards it to the client outside production.
  */
 export async function issueOtp(email: string): Promise<{ devCode?: string }> {
   const code = randomInt(100000, 1000000).toString();

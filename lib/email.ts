@@ -7,8 +7,8 @@ import nodemailer, { type Transporter } from "nodemailer";
  * works with the same four env vars.
  *
  * Without SMTP credentials, or if delivery fails, messages print to the
- * server console and OTP codes surface in the form, so the registration
- * flow never hard-blocks on email.
+ * server console and `sent: false` comes back — callers decide what that
+ * means for the user.
  */
 
 let cached: Transporter | null = null;
