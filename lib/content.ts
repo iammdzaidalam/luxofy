@@ -6,7 +6,7 @@ export const heroContent = {
   title: "Goa Investor Showcase",
   subtitle: "From apartments to villas, we have got you covered",
   date: "9 August 2026",
-  city: "Delhi NCR",
+  city: "Gurugram",
   badge: "",
   poster: u("1512343879784-a960bf40e7f2", 1920, 70),
   videoSources: [
@@ -174,7 +174,7 @@ export const catalog: CatalogItem[] = [
       "Four field facing 5 BHK mansions with private pools and steamers in the bathrooms, a 2.3 km walk from Candolim beach.",
     price: "₹9 Cr onwards",
     config: "5 BHK · 5,380 sq ft super built up",
-    status: "Possession March 2026",
+    status: "Possession July 2027",
     image: { src: "/projects/azalea-0.jpg", alt: "Pool view at night at The Azalea, Candolim" },
   },
   {
@@ -185,15 +185,6 @@ export const catalog: CatalogItem[] = [
     price: "₹3.94 Cr onwards",
     config: "4 BHK · 4,243 sq ft",
     image: { src: "/projects/adelaide-0.jpg", alt: "The Casa Adelaide villas at Aldona" },
-  },
-  {
-    name: "Casa Hill Crest",
-    location: "Bastora, North Goa",
-    categories: ["Villas", "Upcoming"],
-    blurb: "3 and 4 BHK villas with panoramic views, private pools and smart homes.",
-    config: "3 and 4 BHK villas",
-    status: "Launching soon · Construction started",
-    image: { src: "/projects/hill-crest-c0.jpg", alt: "Front view of Casa Hill Crest, Bastora" },
   },
   {
     name: "The Zinnia",
@@ -367,7 +358,6 @@ export const gallery = [
   { src: "/projects/mmirari-3.jpg", alt: "Mmirari House exterior with pool, Reis Magos", tag: "Apartments", tall: true },
   { src: "/projects/floretta-1.jpg", alt: "Completed Floretta villa pool, photographed on site", tag: "Villas", tall: false },
   { src: "/projects/serene-meadows-c0.jpg", alt: "Double height atrium at Serene Meadows, Kadamba Plateau", tag: "Apartments", tall: false },
-  { src: "/projects/hill-crest-c1.jpg", alt: "Back view of Casa Hill Crest, Bastora", tag: "Villas", tall: false },
   { src: "/projects/casa-magarida-c1.jpg", alt: "Pool at Casa Magarida, Baga Arpora", tag: "Apartments", tall: false },
   { src: "/projects/casa-de-fresco-0.jpg", alt: "Jacuzzi deck at Casa De Fresco, Guirim", tag: "Villas", tall: false },
   { src: "/projects/amora-c0.jpg", alt: "Terrace pool at Amora Horizon, Nerul", tag: "Apartments", tall: false },
@@ -382,7 +372,7 @@ export const faqs = [
   },
   {
     q: "Where and when is the event?",
-    a: "9 August 2026 in Delhi NCR. The exact venue and timings are shared with confirmed guests during the RSVP call.",
+    a: "9 August 2026 at DoubleTree by Hilton, Sector 56, Gurugram. Exact timings are shared with confirmed guests during the RSVP call.",
   },
   {
     q: "Why is the event invite only?",

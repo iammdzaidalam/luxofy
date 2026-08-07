@@ -51,7 +51,7 @@ export async function sendConfirmationEmail(lead: Lead): Promise<void> {
 export async function sendWhatsAppConfirmation(lead: Lead): Promise<void> {
   const message =
     `Hi ${lead.fullName.split(" ")[0]}, your seat for the ${site.name} on ${site.event.dateLabel} ` +
-    `in ${site.event.city} is reserved. The venue is shared with confirmed guests. ` +
+    `at ${site.event.venueNote} is reserved. ` +
     `Our investment advisor will call you shortly to confirm. Reply here for any questions.`;
 
   if (!process.env.WHATSAPP_TOKEN || !process.env.WHATSAPP_PHONE_NUMBER_ID) {

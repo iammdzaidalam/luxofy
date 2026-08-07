@@ -1,3 +1,8 @@
+const venue = {
+  name: "DoubleTree by Hilton",
+  locality: "Sector 56, Gurugram",
+} as const;
+
 export const site = {
   name: "Goa Luxury Investor Showcase",
   organizer: "Think Reality",
@@ -8,8 +13,9 @@ export const site = {
     // Full-day placeholder until exact timings are announced to confirmed guests
     startIso: "2026-08-09",
     endIso: "2026-08-09",
-    city: "Delhi NCR",
-    venueNote: "Venue shared with confirmed guests",
+    city: "Gurugram",
+    venue,
+    venueNote: `${venue.name}, ${venue.locality}`,
   },
   contact: {
     phone: "+91 92205 04031",
@@ -45,13 +51,18 @@ export function googleCalendarUrl(): string {
     action: "TEMPLATE",
     text: `${site.name} | ${site.organizer} x ${site.partner}`,
     dates: "20260809/20260810",
-    details: `Your seat is reserved for the ${site.name} in ${site.event.city}. The exact venue and timings are shared with confirmed guests. Bring a government photo ID for entry.`,
-    location: site.event.city,
+    details: `Your seat is reserved for the ${site.name} at ${site.event.venueNote}. Exact timings are shared with confirmed guests. Bring a government photo ID for entry.`,
+    location: site.event.venueNote,
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
 
-/** ICS file body: an all-day hold, venue announced to confirmed guests. */
+/** RFC 5545 TEXT escaping — backslashes, semicolons, commas and newlines. */
+function icsText(value: string): string {
+  return value.replace(/[\\;,]/g, (char) => `\\${char}`).replace(/\r?\n/g, "\\n");
+}
+
+/** ICS file body: an all-day hold at the venue, exact timings to follow. */
 export function buildIcs(attendeeName: string): string {
   const uid = `${Date.now()}@luxofy.in`;
   return [
@@ -64,9 +75,9 @@ export function buildIcs(attendeeName: string): string {
     "DTSTAMP:20260716T000000Z",
     "DTSTART;VALUE=DATE:20260809",
     "DTEND;VALUE=DATE:20260810",
-    `SUMMARY:${site.name}`,
-    `DESCRIPTION:Seat reserved for ${attendeeName}. The exact venue and timings in ${site.event.city} are shared with confirmed guests. Bring a government photo ID.`,
-    `LOCATION:${site.event.city}`,
+    `SUMMARY:${icsText(site.name)}`,
+    `DESCRIPTION:${icsText(`Seat reserved for ${attendeeName}. Venue: ${site.event.venueNote}. Exact timings are shared with confirmed guests. Bring a government photo ID.`)}`,
+    `LOCATION:${icsText(site.event.venueNote)}`,
     "STATUS:CONFIRMED",
     "END:VEVENT",
     "END:VCALENDAR",

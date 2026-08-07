@@ -13,7 +13,7 @@ export function Agenda() {
               <SectionHeading
                 eyebrow="Event agenda"
                 title="The flow of the day"
-                copy={`${site.event.dateLabel}, ${site.event.city}. Detailed timings and the venue are shared with confirmed guests.`}
+                copy={`${site.event.dateLabel}, ${site.event.venueNote}. Detailed timings are shared with confirmed guests.`}
               />
               <div className="mt-10">
                 <ButtonLink href="/register" variant="outline">

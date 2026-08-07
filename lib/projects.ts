@@ -213,7 +213,7 @@ export const projects: Project[] = [
       { label: "Configuration", value: "5 BHK villas" },
       { label: "Saleable area", value: "500 sq m (5,380 sq ft)" },
       { label: "Price", value: "₹9 Cr onwards" },
-      { label: "Possession", value: "December 2027" },
+      { label: "Possession", value: "July 2027" },
     ],
     overview: {
       eyebrow: "The project",
@@ -264,7 +264,7 @@ export const projects: Project[] = [
       { label: "Calangute–Baga strip", value: "15 min drive" },
       { label: "Panaji", value: "25 min drive" },
     ],
-    possession: "December 2027",
+    possession: "July 2027",
     priceLabel: "₹9 Cr onwards",
     metaDescription:
       "The Azalea, Candolim — four field-facing 5 BHK villas with private pools, terrace jacuzzis and steam rooms, walking distance to the beach. ₹9 Cr onwards.",

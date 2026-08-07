@@ -35,7 +35,7 @@ export function CtaBanner() {
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
         <Reveal>
           <p className="text-[10px] font-medium uppercase tracking-[0.4em] text-cream/80">
-            9 August 2026, Delhi NCR
+            9 August 2026, Gurugram
           </p>
           <h2 className="font-display mt-6 text-5xl font-normal leading-[1.05] text-cream md:text-7xl">
             {ctaBanner.title}

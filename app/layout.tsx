@@ -27,27 +27,27 @@ export const metadata: Metadata = {
     template: "%s | Goa Luxury Investor Showcase",
   },
   description:
-    "An invite-only investor showcase in Delhi NCR on 9 August 2026. Discover premium villa and apartment investments in Goa with curated projects, market research and one-on-one advisory from Think Reality and Luxofy Properties.",
+    "An invite-only investor showcase in Gurugram on 9 August 2026. Discover premium villa and apartment investments in Goa with curated projects, market research and one-on-one advisory from Think Reality and Luxofy Properties.",
   keywords: [
     "Goa property investment",
     "luxury villas Goa",
     "Goa real estate event",
     "Think Reality",
     "Luxofy Properties",
-    "investor showcase Delhi NCR",
+    "investor showcase Gurugram",
   ],
   openGraph: {
     type: "website",
     url: site.url,
     siteName: site.name,
-    title: "Goa Luxury Investor Showcase | 9 August 2026, Delhi NCR",
+    title: "Goa Luxury Investor Showcase | 9 August 2026, Gurugram",
     description:
       "Discover premium investment opportunities in Goa. Curated projects, market research and private consultations. Invite only, limited seats.",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Goa Luxury Investor Showcase | 9 August 2026, Delhi NCR",
+    title: "Goa Luxury Investor Showcase | 9 August 2026, Gurugram",
     description:
       "Discover premium investment opportunities in Goa. Invite only, limited seats.",
   },

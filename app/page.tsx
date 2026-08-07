@@ -27,10 +27,12 @@ function StructuredData() {
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     location: {
       "@type": "Place",
-      name: site.event.city,
+      name: site.event.venue.name,
       address: {
         "@type": "PostalAddress",
-        addressLocality: site.event.city,
+        streetAddress: site.event.venue.locality,
+        addressLocality: "Gurugram",
+        addressRegion: "Haryana",
         addressCountry: "IN",
       },
     },

@@ -138,8 +138,8 @@ export function Footer() {
             </p>
             <div className="mt-4 overflow-hidden border border-line">
               <iframe
-                title={`Map of ${site.event.city}`}
-                src="https://www.google.com/maps?q=Delhi+NCR&output=embed"
+                title={`Map of ${site.event.venueNote}`}
+                src={`https://www.google.com/maps?q=${encodeURIComponent(site.event.venueNote)}&output=embed`}
                 className="h-32 w-full grayscale-[45%]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

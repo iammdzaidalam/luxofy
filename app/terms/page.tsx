@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const sections = [
   {
     h: "The event",
-    p: "The Goa Luxury Investor Showcase is a free, invite-only event hosted by Think Reality and Luxofy Properties on 9 August 2026 in Delhi NCR. Registration on this site is a request for a seat; seats are confirmed by our team over a short call and admission is at the organiser's discretion.",
+    p: "The Goa Luxury Investor Showcase is a free, invite-only event hosted by Think Reality and Luxofy Properties on 9 August 2026 in Gurugram. Registration on this site is a request for a seat; seats are confirmed by our team over a short call and admission is at the organiser's discretion.",
   },
   {
     h: "No investment advice",

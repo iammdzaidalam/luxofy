@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Register",
   description:
-    "Reserve your seat at the Goa Luxury Investor Showcase on 9 August 2026 in Delhi NCR. Invite only, limited to 100 investors.",
+    "Reserve your seat at the Goa Luxury Investor Showcase on 9 August 2026 in Gurugram. Invite only, limited to 100 investors.",
 };
 
 export default function RegisterPage() {
