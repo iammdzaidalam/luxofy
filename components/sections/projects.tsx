@@ -36,7 +36,7 @@ function ProjectsBand() {
         </div>
       </div>
       <p className="relative mt-8 text-center text-[10px] font-medium uppercase tracking-[0.4em] text-cream/70">
-        Fourteen projects across North Goa, presented in depth on 9 August
+        Thirteen projects across North Goa, presented in depth on 9 August
       </p>
     </div>
   );

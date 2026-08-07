@@ -19,14 +19,14 @@ export const heroContent = {
 export const trustStats = [
   { value: 300, suffix: "+", label: "Properties sold" },
   { value: 150, suffix: "+", label: "Active listings" },
-  { value: 14, suffix: "", label: "Projects in the Goa portfolio" },
+  { value: 13, suffix: "", label: "Projects in the Goa portfolio" },
   { value: 3, suffix: "", label: "Destinations: Goa, Kasauli, Kumarhatti" },
 ];
 
 export const trustLogos = ["Think Reality", "Luxofy Properties", "STAIL Realty OS"];
 
 export const trustIntro =
-  "Hosted by Think Reality, RERA certified channel partners, with Luxofy Properties, the developer behind fourteen luxury projects across North Goa, including the sold out Eleva Suites in Calangute.";
+  "Hosted by Think Reality, RERA certified channel partners, with Luxofy Properties, the developer behind thirteen luxury projects across North Goa, including the sold out Eleva Suites in Calangute.";
 
 /** Editorial collage around the intro heading, all from the Luxofy portfolio. */
 export const introCollage = [
@@ -47,7 +47,7 @@ export const whyAttend = [
   },
   {
     title: "Premium projects",
-    body: "Fourteen villa and apartment projects, including off-market opportunities.",
+    body: "Thirteen villa and apartment projects, including off-market opportunities.",
   },
   {
     title: "Rental yield strategy",
